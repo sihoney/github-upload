@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin-top: 73px;
+}
+
+/* bar */
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 1rem 0.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.bar h1 {
+  flex: 0.4;
+  text-align: center;
+  color: white;
+}
+.bar .bar-ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+.bar ul li {
+  text-transform: uppercase;
+  margin-right: 4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* About */
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.about .wrapper {
+  width: 100vw;
+  height: 70vh;
+}
+.wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-info {
+  position: absolute;
+  top: 30%;
+  padding: 0 5rem;
+}
+.about-info h2 {
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0 7rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  background-color: black;
+  color: chartreuse;
+  text-shadow: 3px 2px red;
+}
+.about-info p {
+  background: black;
+  color: white;
+  padding: 1rem;
+}
+
+/* Projects */
+.project-section {
+  margin: 5rem 0.5rem;
+}
+.project-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  text-shadow: 3px 2px pink;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.projects {
+  width: 100%;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  grid-gap: 2rem 0;
+}
+@media screen and (max-width: 940px) {
+  .projects {
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 638px) {
+  .projects {
+    grid-template: repeat(6, 1fr) / 1fr;
+  }
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.project img {
+  width: 300px;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+
+/* SKILLS */
+
+.skill-section {
+  height: 30rem;
+  background-color: dimgray;
+  padding: 4rem 1rem;
+}
+.skill-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 3px 3px pink;
+}
+.skills ul {
+  margin-top: 8rem;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.skills ul li {
+  background-color: white;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.skills ul li:hover {
+  background: yellow;
+}
+
+/* Contact */
+
+.contact {
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: dimgray;
+}
+.contact h3 {
+  font-size: 1.2rem;
+  transition: 0.2s;
+}
+.contact h3:hover {
+  background: darkslateblue;
+  border-radius: 5px;
+  color: white;
+  padding: 1.3rem;
+  box-shadow: 3px 3px yellow;
+}
+
+/* CONTACT PAGE */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: navy;
+}
+.header h1 {
+  text-align: center;
+  padding-left: 3rem;
+  color: white;
+  letter-spacing: 2px;
+}
+.home {
+  margin-right: 3rem;
+  font-size: 1.3rem;
+}
+.home a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+.contact-info {
+  width: 70%;
+  margin: 5rem auto;
+  background: #8a7d7d;
+  padding: 3rem;
+}
+@media screen and (max-width: 700px) {
+  .contact-info {
+    width: 90%;
+  }
+}
+.contact-info h3 {
+  margin: 1rem;
+  text-align: center;
+}
+
+/* dropdown menus */
+.dropdown-wrapper {
+  display: none;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  background-color: gray;
+}
+.dropdown li {
+  text-align: center;
+  padding: 10px 15px;
+  list-style: none;
+}
+.dropdown li:hover {
+  background-color: navy;
+}
+
+.toggle {
+  display: block;
+}
+
+/* Contact Image */
+
+.contactPhotos {
+  width: 50%;
+  margin: 0 auto;
+}
+.contactPhotos img {
+  width: 100%;
+}
+.clickHere {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-shadow: 3px 3px rgb(31, 228, 228);
+}
